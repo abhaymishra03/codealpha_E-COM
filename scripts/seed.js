@@ -11,7 +11,8 @@ const products = [
   { name: 'Daily Carry Bottle', category: 'Accessories', price: 34, badge: '', description: 'Double-wall insulated stainless steel keeps drinks cold for hours.', image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85', stock: 22 },
   { name: 'Soft Knit Beanie', category: 'Apparel', price: 32, badge: 'Favorite', description: 'A cozy, easy-fit rib knit beanie for crisp days and cool evenings.', image: 'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=900&q=85', stock: 15 },
   { name: 'Weekly Planner Pad', category: 'Stationery', price: 18, badge: '', description: 'A tear-off weekly planner to keep your plans clear and your desk calm.', image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=85', stock: 28 }
-];
+]; 
+
 
 async function seed() {
   if (!process.env.MONGODB_URI) throw new Error('Set MONGODB_URI in your .env file first.');
